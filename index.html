@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.header {
+    margin: 100px auto 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4 , 375px);
+    justify-content: center;
+    gap: 40px;
+}
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        margin: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4 , 375px);
+        justify-content: center;
+        gap: 40px;
+    }
+}
+.card-1 {
+    background-color: #733fc8;
+    grid-area: 1 / 1 / 2 / 3;
+    padding:  40px 40px 10px;
+    color: white;
+    border-radius: 10px;
+    box-shadow:1px 2px 20px 0px #b5b5b5;
+    position: relative;
+}
+.card-1::after {
+    content: " “ ";
+    font-size: 603px;
+    position: absolute;
+    top: -108px;
+    right: 54px;
+    opacity: 35%;
+}
+@media (max-width: 767px) {
+    .card-1::after {
+        right: 0;
+    }
+}
+.image img {
+    width: 50px;
+    border-radius: 50%;
+}
+.card-1 img {
+    border: 3px solid #887d99;
+}
+.card-2 img {
+    border: 3px solid rgb(100 75 75);
+}
+.card-3 img {
+    border: 3px solid rgb(103, 100, 100);
+}
+.card-4 img {
+    border: 3px solid #733fc8;
+}
+.card-5 img {
+    border: 3px solid rgb(100 75 75);
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.info .text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    align-items: baseline;
+}
+.info .text h3 {
+    margin: 0 0 5px;
+}
+.info .text h4 {
+    margin: 0;
+    color: #a5a5a5;
+    font-weight: 200;
+}
+.content p:first-of-type { 
+    font-size: 26px;
+    line-height: 1.3;
+}
+.content p:last-of-type { 
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 1.4;
+    opacity: 80%;
+}
+@media (max-width: 991px) {
+    .content p:first-of-type {
+        font-size: 22px;
+    }
+}
+@media (max-width: 991px) {
+    .content p:last-of-type {
+        font-size: 13px;
+    }
+}
+.card-2 {
+    background-color: #49556b;
+    padding:  40px 40px 10px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 20px 0px #b5b5b5;
+}
+.card-3 {
+    grid-area: 2 / 1;
+    background-color: white;
+    padding: 40px 40px 10px;
+    color: #60636e;
+    border-radius: 10px;
+    box-shadow: 1px 2px 20px 0px #b5b5b5;
+}
+.card-3 .content p:last-of-type {
+    color: #60636e;
+}
+.card-4 {
+    grid-area: 2 / 2 / 3 / 4;
+    background-color: #171f2c;
+    padding: 40px 40px 10px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 20px 0px #b5b5b5;
+}
+.card-5 {
+    grid-area: 1 / 4 / 3 / 4;
+    background-color: white;
+    padding: 40px 40px 10px;
+    color: #171f2c;
+    border-radius: 10px;
+    box-shadow: 1px 2px 20px 0px #b5b5b5;
+}
+.card-5 .content p:last-of-type {
+    color: #60636e;
+    line-height: 1.5;
+}
+    
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="card-1">
+        <div class="info">
+          <div class="image">
+            <img src="./images/image-daniel.jpg" alt="">
+          </div>
+            <div class="text">
+              <h3>Daniel Clifford</h3>
+              <h4>Verified Graduate</h4>
+            </div>
+        </div>
+        <div class="content">
+          <p>I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+            in the company I joined. I honestly feel I got every penny’s worth.</p>
+            <p> “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+              transition and have heard some people who had an amazing experience here. I signed up 
+              for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+              The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+              the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+        </div>
+      </div>
+      <div class="card-2">
+        <div class="info">
+          <div class="image">
+            <img src="./images/image-jonathan.jpg" alt="">
+          </div>
+            <div class="text">
+              <h3>Jonathan Walters</h3>
+              <h4>Verified Graduate</h4>
+            </div>
+        </div>
+        <div class="content">
+          <p>The team was very supportive and kept me motivated.</p>
+            <p> “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+              for a big company. This was one of the best investments I’ve made in myself. ”</p>
+        </div>
+      </div>
+      <div class="card-3">
+        <div class="info">
+          <div class="image">
+            <img src="./images/image-jeanette.jpg" alt="">
+          </div>
+            <div class="text">
+              <h3>Jeanette Harmon</h3>
+              <h4>Verified Graduate</h4>
+            </div>
+        </div>
+        <div class="content">
+          <p>An overall wonderful and rewarding experience</p>
+            <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+              while doing something I love. ”</p>
+        </div>
+      </div>
+      <div class="card-4">
+        <div class="info">
+          <div class="image">
+            <img src="./images/image-patrick.jpg" alt="">
+          </div>
+            <div class="text">
+              <h3>Patrick Abrams</h3>
+              <h4>Verified Graduate</h4>
+            </div>
+        </div>
+        <div class="content">
+          <p>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+            learning from their experiences was easy.</p>
+            <p> “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+              gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+              junior developer. The standard is above the rest. You will get the personal attention you need from 
+              an incredible community of smart and amazing people. ”</p>
+        </div>
+      </div>
+      <div class="card-5">
+        <div class="info">
+          <div class="image">
+            <img src="./images/image-kira.jpg" alt="">
+          </div>
+            <div class="text">
+              <h3>Kira Whittle</h3>
+              <h4>Verified Graduate</h4>
+            </div>
+        </div>
+        <div class="content">
+          <p>Such a life-changing experience. Highly recommended!</p>
+            <p> “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+              professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+              student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+              did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+              project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+              could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+              experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+              100% recommend! ”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution" style="margin-top: 50px">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.facebook.com/abdoismael0" style=" border: 1px solid black ; background-color: black  ; padding: 5px ; border-radius: 5px; color:white ; text-decoration: none " >Bodda</a>.
+  </div>
+</body>
+</html>
